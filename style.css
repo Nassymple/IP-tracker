@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 670px;
+    width: 100%;
+    z-index: 1;
+}
+
+.container{
+    width: 100%;
+    height: 29vh;
+    background-image: url(nasa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 3%;
+   
+}
+#form-div{
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+#inputBtn{
+    border-radius: 4px;
+    padding: 5px;
+    width: 50vw;
+    max-width: 400px;
+}
+#form-btn{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(39, 37, 37);
+    padding: 7px 10px 8px 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: none;
+    font-size: 14px;
+    padding: 7px;
+    width: 80px;
+}
+#form-btn:hover{
+    color: black;
+    border: 1px solid black;
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+#display{
+    display: flex;
+    flex-direction: row;
+    font-family: cursive;
+    font-size: 18px;
+    padding: 50px;
+    /* background: linear-gradient(rgb(255, 255, 255),rgb(187, 187, 187))  ; */
+    background-color: white;
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    right: 0;
+    border-radius: 7px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    justify-content: space-evenly;
+    width: 90vw;
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 18px;
+    }
+
+    #display {
+        padding: 40px;
+        font-size: 16px;
+        margin-top: 30px;
+        flex-direction: row;
+        align-items: center;     
+    }
+}
+
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 16px;
+    }
+
+    #display {
+        padding: 30px;
+        font-size: 16px;
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: center;
+        top: 23vh;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 14px;
+    }
+
+    #display {
+        padding: 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;  
+    }
+}
+
+@media (max-width:480px) {
+    .title {
+        font-size: 14px;
+    }
+
+    #display {
+        padding: 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+    }
+}
+
